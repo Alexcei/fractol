@@ -47,9 +47,18 @@ void		fr_creat_image(t_data *data)
 			while (pow(data->z.re, 2.0) + pow(data->z.im, 2.0) <= 4
 				   && data->iteration < data->max_iteration)
 			{
-				data->z = init_complex(
-						pow(data->z.re, 2.0) - pow(data->z.im, 2.0) + data->c.re,
-						2.0 * data->z.re * data->z.im + data->c.im);
+				if (data->fractal->mandelbrot)
+					mandelbrot(data);
+				else if (data->fractal->julia)
+					julia(data);
+				else if (data->fractal->burning_ship)
+					burning_ship(data);
+				else if (data->fractal->mandelbar)
+					mandelbar(data);
+				else if (data->fractal->celtic_mandelbrot)
+					celtic_mandelbrot(data);
+				else
+					data->z = init_complex(5, 5);
 				data->iteration++;
 			}
 			((int *)(data->data_addr))[y * WIDTH + x] = fr_color(data);

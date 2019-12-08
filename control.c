@@ -41,6 +41,76 @@ static void		color_up(int	*color, int key)
 	}
 }
 
+void	mandelbrot_up(t_data *data)
+{
+	if (!data->fractal->mandelbrot)
+	{
+		data->fractal->mandelbrot = 1;
+		data->fractal->julia = 0;
+		data->fractal->burning_ship = 0;
+		data->fractal->mandelbar = 0;
+		data->fractal->celtic_mandelbrot = 0;
+	}
+	else
+		data->fractal->mandelbrot = 0;
+}
+
+void	julia_up(t_data *data)
+{
+	if (!data->fractal->julia)
+	{
+		data->fractal->mandelbrot = 0;
+		data->fractal->julia = 1;
+		data->fractal->burning_ship = 0;
+		data->fractal->mandelbar = 0;
+		data->fractal->celtic_mandelbrot = 0;
+	}
+	else
+		data->fractal->julia = 0;
+}
+
+void	burning_ship_up(t_data *data)
+{
+	if (!data->fractal->burning_ship)
+	{
+		data->fractal->mandelbrot = 0;
+		data->fractal->julia = 0;
+		data->fractal->burning_ship = 1;
+		data->fractal->mandelbar = 0;
+		data->fractal->celtic_mandelbrot = 0;
+	}
+	else
+		data->fractal->burning_ship = 0;
+}
+
+void	mandelbar_up(t_data *data)
+{
+	if (!data->fractal->mandelbar)
+	{
+		data->fractal->mandelbrot = 0;
+		data->fractal->julia = 0;
+		data->fractal->burning_ship = 0;
+		data->fractal->mandelbar = 1;
+		data->fractal->celtic_mandelbrot = 0;
+	}
+	else
+		data->fractal->mandelbar = 0;
+}
+
+void	celtic_mandelbrot_up(t_data *data)
+{
+	if (!data->fractal->celtic_mandelbrot)
+	{
+		data->fractal->mandelbrot = 0;
+		data->fractal->julia = 0;
+		data->fractal->burning_ship = 0;
+		data->fractal->mandelbar = 0;
+		data->fractal->celtic_mandelbrot = 1;
+	}
+	else
+		data->fractal->celtic_mandelbrot = 0;
+}
+
 int				fr_hook_keydown(int key, t_data *data)
 {
 	double	i;
@@ -52,6 +122,17 @@ int				fr_hook_keydown(int key, t_data *data)
 		put_pause(data);
 	if (key == MAIN_PAD_H)
 		help_up(data);
+
+	if (key == MAIN_PAD_1)
+		mandelbrot_up(data);
+	if (key == MAIN_PAD_2)
+		julia_up(data);
+	if (key == MAIN_PAD_3)
+		burning_ship_up(data);
+	if (key == MAIN_PAD_4)
+		mandelbar_up(data);
+	if (key == MAIN_PAD_5)
+		celtic_mandelbrot_up(data);
 
 	if (key == MAIN_PAD_A || key == MAIN_PAD_Q)
 		color_up(&data->red, key);
