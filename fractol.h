@@ -120,6 +120,7 @@ int					fr_hook_keydown(int key, t_data *data);
 /*
 **					control_mouse.c
 */
+void				fr_view_up(t_data *data);
 int					fr_mouse_press(int button, int x, int y, void *param);
 int					fr_mouse_release(int button, int x, int y, void *param);
 int					fr_mouse_move(int x, int y, void *param);

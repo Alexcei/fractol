@@ -54,6 +54,7 @@ void	mandelbrot_up(t_data *data)
 	}
 	else
 		data->fractal->mandelbrot = 0;
+	fr_view_up(data);
 }
 
 void	julia_up(t_data *data)
@@ -68,6 +69,7 @@ void	julia_up(t_data *data)
 	}
 	else
 		data->fractal->julia = 0;
+	fr_view_up(data);
 }
 
 void	burning_ship_up(t_data *data)
@@ -82,6 +84,7 @@ void	burning_ship_up(t_data *data)
 	}
 	else
 		data->fractal->burning_ship = 0;
+	fr_view_up(data);
 }
 
 void	mandelbar_up(t_data *data)
@@ -96,6 +99,7 @@ void	mandelbar_up(t_data *data)
 	}
 	else
 		data->fractal->mandelbar = 0;
+	fr_view_up(data);
 }
 
 void	celtic_mandelbrot_up(t_data *data)
@@ -110,6 +114,7 @@ void	celtic_mandelbrot_up(t_data *data)
 	}
 	else
 		data->fractal->celtic_mandelbrot = 0;
+	fr_view_up(data);
 }
 
 void	threads_up(int key, t_data *data)

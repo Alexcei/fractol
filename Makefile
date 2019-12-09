@@ -6,7 +6,7 @@
 #    By: bpole <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/11 10:08:31 by bpole             #+#    #+#              #
-#    Updated: 2019/12/08 17:15:51 by bpole            ###   ########.fr        #
+#    Updated: 2019/12/10 00:59:36 by bpole            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,3 +45,5 @@ fclean: clean
 	$(MAKE) -C $(LIB_DIR) fclean
 
 re: fclean all
+
+.PHONY: all clean fclean re

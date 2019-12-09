@@ -2,7 +2,7 @@
 
 static void		zoom(int key, t_data *data, int x, int y)
 {
-	double	i;
+	double		i;
 
 	i = (data->min.re - data->max.re) / 10;
 	if (key == MOUSE_SCROLL_UP)
@@ -19,8 +19,12 @@ static void		zoom(int key, t_data *data, int x, int y)
 	}
 }
 
-static void		view_up(t_data *data)
+void			fr_view_up(t_data *data)
 {
+	data->threads = 4;
+	data->red = 2;
+	data->green = 1;
+	data->blue = 3;
 	data->max_iteration = 30;
 	data->max.re = 2.0;
 	data->min = init_complex(-2, -2);
@@ -40,7 +44,7 @@ int				fr_mouse_press(int button, int x, int y, void *param)
 	else if (button == MOUSE_RIGHT_BUTTON)
 		data->mouse->put_right = 1;
 	else if (button == MOUSE_THREE_BUTTON)
-		view_up(data);
+		fr_view_up(data);
 	fr_render(data);
 	return (0);
 }
