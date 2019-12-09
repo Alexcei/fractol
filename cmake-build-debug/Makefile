@@ -2256,33 +2256,6 @@ ft_printf/parser.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/ft_printf/parser.c.s
 .PHONY : ft_printf/parser.c.s
 
-loop_key_hook.o: loop_key_hook.c.o
-
-.PHONY : loop_key_hook.o
-
-# target to build an object file
-loop_key_hook.c.o:
-	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/loop_key_hook.c.o
-.PHONY : loop_key_hook.c.o
-
-loop_key_hook.i: loop_key_hook.c.i
-
-.PHONY : loop_key_hook.i
-
-# target to preprocess a source file
-loop_key_hook.c.i:
-	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/loop_key_hook.c.i
-.PHONY : loop_key_hook.c.i
-
-loop_key_hook.s: loop_key_hook.c.s
-
-.PHONY : loop_key_hook.s
-
-# target to generate assembly for a file
-loop_key_hook.c.s:
-	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/loop_key_hook.c.s
-.PHONY : loop_key_hook.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2336,6 +2309,33 @@ render.s: render.c.s
 render.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/render.c.s
 .PHONY : render.c.s
+
+threads.o: threads.c.o
+
+.PHONY : threads.o
+
+# target to build an object file
+threads.c.o:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/threads.c.o
+.PHONY : threads.c.o
+
+threads.i: threads.c.i
+
+.PHONY : threads.i
+
+# target to preprocess a source file
+threads.c.i:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/threads.c.i
+.PHONY : threads.c.i
+
+threads.s: threads.c.s
+
+.PHONY : threads.s
+
+# target to generate assembly for a file
+threads.c.s:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/threads.c.s
+.PHONY : threads.c.s
 
 utils.o: utils.c.o
 
@@ -2610,15 +2610,15 @@ help:
 	@echo "... ft_printf/parser.o"
 	@echo "... ft_printf/parser.i"
 	@echo "... ft_printf/parser.s"
-	@echo "... loop_key_hook.o"
-	@echo "... loop_key_hook.i"
-	@echo "... loop_key_hook.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... render.o"
 	@echo "... render.i"
 	@echo "... render.s"
+	@echo "... threads.o"
+	@echo "... threads.i"
+	@echo "... threads.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"

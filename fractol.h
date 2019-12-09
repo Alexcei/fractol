@@ -15,10 +15,10 @@
 # define WHT	"\x1B[37m"
 # define RESET	"\x1B[0m"
 
-# define HEIGHT				800
-# define WIDTH				800
+# define HEIGHT				650
+# define WIDTH				650
 # define SIZE 				HEIGHT * WIDTH
-# define THREADS 16
+//# define THREADS 4
 
 # define BACKGROUND			0xFFFFFF
 # define TEXT_COLOR			0xEAEAEA
@@ -85,7 +85,6 @@ typedef struct 		s_complex
 
 typedef struct		s_data
 {
-	int i;
 	t_fractal 		*fractal;
 	t_mouse 		*mouse;
 	t_complex		factor;
@@ -94,12 +93,12 @@ typedef struct		s_data
 	t_complex		c;
 	t_complex		z;
 	t_complex		k;
-	int red;
-	int green;
-	int blue;
+	int 			threads;
+	int 			red;
+	int 			green;
+	int 			blue;
 	int 			max_iteration;
 	int 			iteration;
-	//int				width;
 	int 			help;
 	int 			pause;
 	void			*mlx;
@@ -109,6 +108,8 @@ typedef struct		s_data
 	int				bits_per_pixel;
 	int				size_line;
 	int				endian;
+	int				begin;
+	int				end;
 }					t_data;
 
 /*

@@ -83,9 +83,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/output_u.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/output_u.c.o"
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/output_x.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/output_x.c.o"
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/parser.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/parser.c.o"
-  "/Users/bpole/CLionProjects/my_fractol/loop_key_hook.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/loop_key_hook.c.o"
   "/Users/bpole/CLionProjects/my_fractol/main.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/main.c.o"
   "/Users/bpole/CLionProjects/my_fractol/render.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/render.c.o"
+  "/Users/bpole/CLionProjects/my_fractol/threads.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/threads.c.o"
   "/Users/bpole/CLionProjects/my_fractol/utils.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

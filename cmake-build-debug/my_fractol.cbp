@@ -326,9 +326,6 @@
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/ft_printf/parser.c">
 			<Option target="my_fractol"/>
 		</Unit>
-		<Unit filename="/Users/bpole/CLionProjects/my_fractol/loop_key_hook.c">
-			<Option target="my_fractol"/>
-		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/main.c">
 			<Option target="my_fractol"/>
 		</Unit>
@@ -336,6 +333,9 @@
 			<Option target="my_fractol"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/render.c">
+			<Option target="my_fractol"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_fractol/threads.c">
 			<Option target="my_fractol"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/utils.c">

@@ -7,21 +7,21 @@ static void		zoom(int key, t_data *data, int x, int y)
 	i = (data->min.re - data->max.re) / 10;
 	if (key == MOUSE_SCROLL_UP)
 	{
-		data->min.re -= i * x / WIDTH;
-		data->max.re += i * (WIDTH - x) / WIDTH;
-		data->min.im -= i * (HEIGHT - y) / HEIGHT;
+		data->min.re -= 2 * i * x / WIDTH;
+		data->max.re += 2 * i * (WIDTH - x) / WIDTH;
+		data->min.im -= 2 * i * (HEIGHT - y) / HEIGHT;
 	}
 	else if (key == MOUSE_SCROLL_DOWN)
 	{
-		data->min.re += i * x / WIDTH;
-		data->max.re -= i * (WIDTH - x) / WIDTH;
-		data->min.im += i * (HEIGHT - y) / HEIGHT;
+		data->min.re += 2 * i * x / WIDTH;
+		data->max.re -= 2 * i * (WIDTH - x) / WIDTH;
+		data->min.im += 2 * i * (HEIGHT - y) / HEIGHT;
 	}
 }
 
 static void		view_up(t_data *data)
 {
-	data->max_iteration = 2;
+	data->max_iteration = 30;
 	data->max.re = 2.0;
 	data->min = init_complex(-2, -2);
 }
@@ -65,7 +65,7 @@ int				fr_mouse_move(int x, int y, void *param)
 	double	i;
 
 	data = (t_data *)param;
-	i = (data->max.re - data->min.re);
+	i = (data->max.re - data->min.re) / WIDTH;
 	data->mouse->previous_x = data->mouse->x;
 	data->mouse->previous_y = data->mouse->y;
 	data->mouse->x = x;
@@ -79,9 +79,9 @@ int				fr_mouse_move(int x, int y, void *param)
 	}
 	if (data->mouse->put_right)
 	{
-		data->min.re -= (x - data->mouse->previous_x) * 0.00125 * i;
-		data->max.re -= (x - data->mouse->previous_x) * 0.00125 * i;
-		data->min.im += (y - data->mouse->previous_y) * 0.00125 * i;
+		data->min.re -= (x - data->mouse->previous_x) * i;
+		data->max.re -= (x - data->mouse->previous_x) * i;
+		data->min.im += (y - data->mouse->previous_y) * i;
 		fr_render(data);
 	}
 	return (0);

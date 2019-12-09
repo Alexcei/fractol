@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/bpole/CLionProjects/my_fractol/control.c
-fractol.h
-/Users/bpole/CLionProjects/my_fractol/fractol.h
-
-/Users/bpole/CLionProjects/my_fractol/control_mouse.c
-fractol.h
-/Users/bpole/CLionProjects/my_fractol/fractol.h
-
-/Users/bpole/CLionProjects/my_fractol/fractol.c
-fractol.h
-/Users/bpole/CLionProjects/my_fractol/fractol.h
-
 /Users/bpole/CLionProjects/my_fractol/fractol.h
 ft_printf/ft_printf.h
 /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
@@ -44,19 +32,9 @@ unistd.h
 fcntl.h
 /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/fcntl.h
 
-/Users/bpole/CLionProjects/my_fractol/loop_key_hook.c
+/Users/bpole/CLionProjects/my_fractol/threads.c
 fractol.h
 /Users/bpole/CLionProjects/my_fractol/fractol.h
-
-/Users/bpole/CLionProjects/my_fractol/main.c
-fractol.h
-/Users/bpole/CLionProjects/my_fractol/fractol.h
-
-/Users/bpole/CLionProjects/my_fractol/render.c
-fractol.h
-/Users/bpole/CLionProjects/my_fractol/fractol.h
-
-/Users/bpole/CLionProjects/my_fractol/utils.c
-fractol.h
-/Users/bpole/CLionProjects/my_fractol/fractol.h
+stdio.h
+-
 

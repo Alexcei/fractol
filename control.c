@@ -1,11 +1,12 @@
 #include "fractol.h"
 
-static void		zoom_down(t_data *data)
-{
+//static void		zoom_down(t_data *data)
+//{
+//	(void)data;
 //	data->camera->zoom  -= 1;
 //	if (data->camera->zoom  < 1)
 //		data->camera->zoom = 1;
-}
+//}
 
 static void		put_pause(t_data *data)
 {
@@ -111,6 +112,24 @@ void	celtic_mandelbrot_up(t_data *data)
 		data->fractal->celtic_mandelbrot = 0;
 }
 
+void	threads_up(int key, t_data *data)
+{
+	if (key == MAIN_PAD_PLUS)
+	{
+		if (data->threads == 4)
+			data->threads = 4;
+		else
+			data->threads++;
+	}
+	if (key == MAIN_PAD_MINUS)
+	{
+		if (data->threads == 1)
+			data->threads = 1;
+		else
+			data->threads--;
+	}
+}
+
 int				fr_hook_keydown(int key, t_data *data)
 {
 	double	i;
@@ -142,6 +161,9 @@ int				fr_hook_keydown(int key, t_data *data)
 		data->k.im -= 0.1;
 	if (key == 88)
 		data->k.im += 0.1;
+
+	if (key == MAIN_PAD_PLUS || key == MAIN_PAD_MINUS)
+		threads_up(key, data);
 
 	if (key == MAIN_PAD_A || key == MAIN_PAD_Q)
 		color_up(&data->red, key);

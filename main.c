@@ -24,7 +24,8 @@ static int		fr_init(t_data *data, t_mouse  *mouse, t_fractal *fractal)
 		return (0);
 	data->data_addr = mlx_get_data_addr(data->img, &data->bits_per_pixel,
 										&data->size_line, &data->endian);
-	data->max_iteration = 20;
+	data->threads = 4;
+	data->max_iteration = 30;
 	data->red = 2;
 	data->green = 1;
 	data->blue = 3;

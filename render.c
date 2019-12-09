@@ -13,7 +13,7 @@ static void		render_menu(t_data *data)
 	mlx_string_put(data->mlx, data->win, 65, 100,
 				   TEXT_COLOR, "Reset view - Press wheel mouse");
 	mlx_string_put(data->mlx, data->win, 65, 120,
-				   TEXT_COLOR, "Pause - \"P\"");
+				   TEXT_COLOR, "Julia stop - \"P\"");
 }
 
 void			fr_render(t_data *data)

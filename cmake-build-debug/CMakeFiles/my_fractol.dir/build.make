@@ -1084,22 +1084,9 @@ CMakeFiles/my_fractol.dir/ft_printf/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_fractol.dir/ft_printf/parser.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/my_fractol/ft_printf/parser.c -o CMakeFiles/my_fractol.dir/ft_printf/parser.c.s
 
-CMakeFiles/my_fractol.dir/loop_key_hook.c.o: CMakeFiles/my_fractol.dir/flags.make
-CMakeFiles/my_fractol.dir/loop_key_hook.c.o: ../loop_key_hook.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/my_fractol.dir/loop_key_hook.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_fractol.dir/loop_key_hook.c.o   -c /Users/bpole/CLionProjects/my_fractol/loop_key_hook.c
-
-CMakeFiles/my_fractol.dir/loop_key_hook.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_fractol.dir/loop_key_hook.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/my_fractol/loop_key_hook.c > CMakeFiles/my_fractol.dir/loop_key_hook.c.i
-
-CMakeFiles/my_fractol.dir/loop_key_hook.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_fractol.dir/loop_key_hook.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/my_fractol/loop_key_hook.c -o CMakeFiles/my_fractol.dir/loop_key_hook.c.s
-
 CMakeFiles/my_fractol.dir/main.c.o: CMakeFiles/my_fractol.dir/flags.make
 CMakeFiles/my_fractol.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/my_fractol.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/my_fractol.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_fractol.dir/main.c.o   -c /Users/bpole/CLionProjects/my_fractol/main.c
 
 CMakeFiles/my_fractol.dir/main.c.i: cmake_force
@@ -1112,7 +1099,7 @@ CMakeFiles/my_fractol.dir/main.c.s: cmake_force
 
 CMakeFiles/my_fractol.dir/render.c.o: CMakeFiles/my_fractol.dir/flags.make
 CMakeFiles/my_fractol.dir/render.c.o: ../render.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/my_fractol.dir/render.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/my_fractol.dir/render.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_fractol.dir/render.c.o   -c /Users/bpole/CLionProjects/my_fractol/render.c
 
 CMakeFiles/my_fractol.dir/render.c.i: cmake_force
@@ -1122,6 +1109,19 @@ CMakeFiles/my_fractol.dir/render.c.i: cmake_force
 CMakeFiles/my_fractol.dir/render.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_fractol.dir/render.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/my_fractol/render.c -o CMakeFiles/my_fractol.dir/render.c.s
+
+CMakeFiles/my_fractol.dir/threads.c.o: CMakeFiles/my_fractol.dir/flags.make
+CMakeFiles/my_fractol.dir/threads.c.o: ../threads.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/my_fractol.dir/threads.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_fractol.dir/threads.c.o   -c /Users/bpole/CLionProjects/my_fractol/threads.c
+
+CMakeFiles/my_fractol.dir/threads.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_fractol.dir/threads.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/my_fractol/threads.c > CMakeFiles/my_fractol.dir/threads.c.i
+
+CMakeFiles/my_fractol.dir/threads.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_fractol.dir/threads.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/my_fractol/threads.c -o CMakeFiles/my_fractol.dir/threads.c.s
 
 CMakeFiles/my_fractol.dir/utils.c.o: CMakeFiles/my_fractol.dir/flags.make
 CMakeFiles/my_fractol.dir/utils.c.o: ../utils.c
@@ -1217,9 +1217,9 @@ my_fractol_OBJECTS = \
 "CMakeFiles/my_fractol.dir/ft_printf/output_u.c.o" \
 "CMakeFiles/my_fractol.dir/ft_printf/output_x.c.o" \
 "CMakeFiles/my_fractol.dir/ft_printf/parser.c.o" \
-"CMakeFiles/my_fractol.dir/loop_key_hook.c.o" \
 "CMakeFiles/my_fractol.dir/main.c.o" \
 "CMakeFiles/my_fractol.dir/render.c.o" \
+"CMakeFiles/my_fractol.dir/threads.c.o" \
 "CMakeFiles/my_fractol.dir/utils.c.o"
 
 # External object files for target my_fractol
@@ -1304,9 +1304,9 @@ my_fractol: CMakeFiles/my_fractol.dir/ft_printf/output_persent.c.o
 my_fractol: CMakeFiles/my_fractol.dir/ft_printf/output_u.c.o
 my_fractol: CMakeFiles/my_fractol.dir/ft_printf/output_x.c.o
 my_fractol: CMakeFiles/my_fractol.dir/ft_printf/parser.c.o
-my_fractol: CMakeFiles/my_fractol.dir/loop_key_hook.c.o
 my_fractol: CMakeFiles/my_fractol.dir/main.c.o
 my_fractol: CMakeFiles/my_fractol.dir/render.c.o
+my_fractol: CMakeFiles/my_fractol.dir/threads.c.o
 my_fractol: CMakeFiles/my_fractol.dir/utils.c.o
 my_fractol: CMakeFiles/my_fractol.dir/build.make
 my_fractol: CMakeFiles/my_fractol.dir/link.txt
