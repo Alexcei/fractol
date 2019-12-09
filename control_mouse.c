@@ -41,6 +41,7 @@ int				fr_mouse_press(int button, int x, int y, void *param)
 		data->mouse->put_right = 1;
 	else if (button == MOUSE_THREE_BUTTON)
 		view_up(data);
+	fr_render(data);
 	return (0);
 }
 
@@ -54,6 +55,7 @@ int				fr_mouse_release(int button, int x, int y, void *param)
 	data = (t_data *)param;
 	data->mouse->put_left = 0;
 	data->mouse->put_right = 0;
+	fr_render(data);
 	return (0);
 }
 
@@ -68,16 +70,19 @@ int				fr_mouse_move(int x, int y, void *param)
 	data->mouse->previous_y = data->mouse->y;
 	data->mouse->x = x;
 	data->mouse->y = y;
-	if (data->mouse->put_left)
+	if (data->fractal->julia && !data->pause)
 	{
-		//data->camera->beta += (x - data->mouse->previous_x) * 0.002;
-		;//data->camera->alpha -= (y - data->mouse->previous_y) * 0.002;
+		data->k = init_complex(
+			4 * ((double)x / WIDTH - 0.5),
+			4 * ((double)(HEIGHT - y) / HEIGHT - 0.5));
+		fr_render(data);
 	}
 	if (data->mouse->put_right)
 	{
 		data->min.re -= (x - data->mouse->previous_x) * 0.00125 * i;
 		data->max.re -= (x - data->mouse->previous_x) * 0.00125 * i;
 		data->min.im += (y - data->mouse->previous_y) * 0.00125 * i;
+		fr_render(data);
 	}
 	return (0);
 }

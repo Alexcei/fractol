@@ -14,9 +14,6 @@ int 	fr_color(t_data *data)
 	red *= data->red;
 	green *= data->green;
 	blue *= data->blue;
-//	red = (int)(9 * (1 - t) * pow(t, 3) * 255);
-//	green = (int)(15 * pow((1 - t), 2) * pow(t, 2) * 255);
-//	blue = (int)(8.5 * pow((1 - t), 3) * t * 255);
 	return ((red << 16) | (green << 8) | blue);
 }
 
@@ -66,11 +63,4 @@ void		fr_creat_image(t_data *data)
 		}
 		y++;
 	}
-}
-
-int				fr_loop_key_hook(t_data *data)
-{
-	fr_creat_image(data);
-	fr_render(data);
-	return (0);
 }

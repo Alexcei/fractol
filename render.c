@@ -1,15 +1,5 @@
 #include "fractol.h"
 
-static void		render_background(t_data *data)
-{
-	int 		i;
-
-	i = 0;
-	ft_bzero(data->data_addr, sizeof(char) * SIZE);
-	while (i < SIZE)
-		((int*)(data->data_addr))[i++] = BACKGROUND;
-}
-
 static void		render_menu(t_data *data)
 {
 	mlx_string_put(data->mlx, data->win, 85, 20,
@@ -28,7 +18,6 @@ static void		render_menu(t_data *data)
 
 void			fr_render(t_data *data)
 {
-	//render_background(data);
 	fr_creat_image(data);
 	mlx_put_image_to_window(data->mlx, data->win, data->img, 0, 0);
 	if (data->help)

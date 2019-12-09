@@ -134,6 +134,15 @@ int				fr_hook_keydown(int key, t_data *data)
 	if (key == MAIN_PAD_5)
 		celtic_mandelbrot_up(data);
 
+	if (key == 91)
+		data->k.re += 0.1;
+	if (key == 84)
+		data->k.re -= 0.1;
+	if (key == 86)
+		data->k.im -= 0.1;
+	if (key == 88)
+		data->k.im += 0.1;
+
 	if (key == MAIN_PAD_A || key == MAIN_PAD_Q)
 		color_up(&data->red, key);
 
@@ -166,6 +175,6 @@ int				fr_hook_keydown(int key, t_data *data)
 		data->min.im += data->min.im * 0.1;
 	else if (key == ARROW_DOWN)
 		data->min.im -= data->min.im * 0.1;
-	fr_loop_key_hook(data);
+	fr_render(data);
 	return (0);
 }

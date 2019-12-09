@@ -9,7 +9,7 @@ void	mandelbrot(t_data *data)
 
 void	julia(t_data *data)
 {
-	data->k = init_complex(-0.4, 0.6);
+	data->k = init_complex(data->k.re, data->k.im);
 	data->z = init_complex(
 			pow(data->z.re, 2.0) - pow(data->z.im, 2.0) + data->k.re,
 			2.0 * data->z.re * data->z.im + data->k.im);

@@ -2,12 +2,23 @@
 # define FRACTOL_H
 
 # include "ft_printf/ft_printf.h"
+# include <pthread.h>
 # include <mlx.h>
 # include <math.h>
+
+# define CYN	"\x1B[36m"
+# define RED	"\x1B[31m"
+# define GRN	"\x1B[32m"
+# define YEL	"\x1B[33m"
+# define BLU	"\x1B[34m"
+# define MAG	"\x1B[35m"
+# define WHT	"\x1B[37m"
+# define RESET	"\x1B[0m"
 
 # define HEIGHT				800
 # define WIDTH				800
 # define SIZE 				HEIGHT * WIDTH
+# define THREADS 16
 
 # define BACKGROUND			0xFFFFFF
 # define TEXT_COLOR			0xEAEAEA
@@ -74,6 +85,7 @@ typedef struct 		s_complex
 
 typedef struct		s_data
 {
+	int i;
 	t_fractal 		*fractal;
 	t_mouse 		*mouse;
 	t_complex		factor;

@@ -12,5 +12,5 @@ file(GLOB FILES
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx -framework OpenGL -framework AppKit -L")
 set(CMAKE_C_STANDARD 99)
-
+#add_definitions(-Wall -Wextra -Werror)
 add_executable(my_fractol ${FILES})
