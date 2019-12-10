@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   key_control.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:47:26 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 00:48:17 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
-static void		color_up(int	*color, int key)
+static void		color_up(int *color, int key)
 {
-	if (key == MAIN_PAD_A || key == MAIN_PAD_S ||  key == MAIN_PAD_D)
+	if (key == MAIN_PAD_A || key == MAIN_PAD_S || key == MAIN_PAD_D)
 	{
 		if (*color == 0)
 			*color = 0;
@@ -87,10 +99,10 @@ void			fr_key_control(int key, t_data *data)
 	if (key == MAIN_PAD_H)
 		help_up(data);
 	if (key == NUM_PAD_PLUS)
-		data->max_iteration  += 1;
+		data->max_iteration += 1;
 	if (key == NUM_PAD_STAR)
-		data->max_iteration  *= 1.1;
+		data->max_iteration *= 1.1;
 	if (key == ARROW_LEFT || key == ARROW_RIGHT ||
-		key == ARROW_UP || key == ARROW_DOWN)
+			key == ARROW_UP || key == ARROW_DOWN)
 		arrow_control(data, key);
 }

@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fdf.c                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:43:38 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 00:44:10 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 static void		render_background(t_data *data)
 {
-	int 		i;
+	int			i;
 
 	i = 0;
 	ft_bzero(data->data_addr, sizeof(char) * SIZE);
@@ -31,7 +43,7 @@ static int		get_color(t_data *data)
 void			fdf_create(t_data *data)
 {
 	int			x;
-	int 		y;
+	int			y;
 
 	y = 0;
 	init_size(data);

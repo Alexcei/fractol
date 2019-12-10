@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fractol.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:44:55 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 00:47:17 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
@@ -73,7 +85,7 @@ typedef struct		s_dot
 	double			x;
 	double			y;
 	double			z;
-	int 			color;
+	int				color;
 }					t_dot;
 
 typedef struct		s_fractal
@@ -85,7 +97,7 @@ typedef struct		s_fractal
 	int				celtic_mandelbrot;
 }					t_fractal;
 
-typedef struct 		s_complex
+typedef struct		s_complex
 {
 	double			re;
 	double			im;
@@ -93,22 +105,22 @@ typedef struct 		s_complex
 
 typedef struct		s_data
 {
-	t_fractal 		*fractal;
-	t_mouse 		*mouse;
+	t_fractal		*fractal;
+	t_mouse			*mouse;
 	t_complex		factor;
 	t_complex		max;
 	t_complex		min;
 	t_complex		c;
 	t_complex		z;
 	t_complex		k;
-	int 			threads;
-	int 			red;
-	int 			green;
-	int 			blue;
-	int 			max_iteration;
-	int 			iteration;
-	int 			help;
-	int 			pause;
+	int				threads;
+	int				red;
+	int				green;
+	int				blue;
+	int				max_iteration;
+	int				iteration;
+	int				help;
+	int				pause;
 	void			*mlx;
 	void			*win;
 	void			*img;
@@ -124,16 +136,16 @@ typedef struct		s_data
 	double			x_offset;
 	double			y_offset;
 	int				fdf;
-	t_dot 			*dot;
-	int 			m;
-	double 			ratio;
-	int 			size;
-	int 			step;
+	t_dot			*dot;
+	int				m;
+	double			ratio;
+	int				size;
+	int				step;
 	int				width;
 	int				height;
-	int 			polygon;
-	int 			color_tmp;
-	int 			coord;
+	int				polygon;
+	int				color_tmp;
+	int				coord;
 }					t_data;
 
 /*
@@ -199,7 +211,7 @@ void				render_map(t_data *data);
 /*
 **					threads.c
 */
-void 				fr_creat_image(t_data *data);
+void				fr_creat_image(t_data *data);
 void				check_runaway(t_data *data);
 void				init_size(t_data *data);
 

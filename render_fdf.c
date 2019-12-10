@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   render_fdf.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:54:35 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 00:55:23 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 static void		paint_point(int x, int y, t_data *data, int color_default)
@@ -14,7 +26,7 @@ static void		render_line(t_dot a, t_dot b, t_data *data)
 {
 	double		x_step;
 	double		y_step;
-	int 		max;
+	int			max;
 
 	if (!data->coord)
 		return ;
@@ -42,7 +54,7 @@ static void		init_dot_c_d(int i, t_dot *dot_c, t_dot *dot_d, t_data *data)
 void			render_map(t_data *data)
 {
 	t_dot		dots[4];
-	int 		i;
+	int			i;
 
 	i = -1;
 	while (++i < data->size)
@@ -54,7 +66,7 @@ void			render_map(t_data *data)
 		if ((i + 1) % data->width != 0)
 		{
 			if (dots[0].color && data->polygon &&
-				i / data->width != data->height - 1)
+					i / data->width != data->height - 1)
 			{
 				data->color_tmp = dots[0].color;
 				render_plane(dots[0], dots[1], dots[2], data);

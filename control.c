@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   control.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:41:25 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 00:42:12 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 static void		put_pause(t_data *data)
@@ -24,7 +36,7 @@ static void		fdf_up(t_data *data)
 	data->beta = 0;
 }
 
-static void 	coord_up(t_data *data)
+static void		coord_up(t_data *data)
 {
 	if (data->coord == 0)
 		data->coord = 1;

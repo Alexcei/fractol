@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:48:28 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 00:52:39 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 static int		fdf_close(void *param)
@@ -11,7 +23,7 @@ static int		fdf_close(void *param)
 	exit(EXIT_SUCCESS);
 }
 
-static int		fr_init(t_data *data, t_mouse  *mouse, t_fractal *fractal)
+static int		fr_init(t_data *data, t_mouse *mouse, t_fractal *fractal)
 {
 	ft_bzero(fractal, sizeof(t_fractal));
 	ft_bzero(mouse, sizeof(t_mouse));
@@ -19,11 +31,11 @@ static int		fr_init(t_data *data, t_mouse  *mouse, t_fractal *fractal)
 	data->fractal = fractal;
 	data->mouse = mouse;
 	if (!(data->mlx = mlx_init()) ||
-		!(data->win = mlx_new_window(data->mlx, WIDTH, HEIGHT, "Fractol")) ||
-		!(data->img = mlx_new_image(data->mlx, WIDTH, HEIGHT)))
+			!(data->win = mlx_new_window(data->mlx, WIDTH, HEIGHT, "Fractol"))
+			|| !(data->img = mlx_new_image(data->mlx, WIDTH, HEIGHT)))
 		return (0);
 	data->data_addr = mlx_get_data_addr(data->img, &data->bits_per_pixel,
-										&data->size_line, &data->endian);
+			&data->size_line, &data->endian);
 	data->threads = 4;
 	data->max_iteration = 30;
 	data->red = 2;
@@ -70,7 +82,7 @@ static void		init_fractol(t_data *data, char *av)
 int				main(int ac, char **av)
 {
 	t_fractal	fractal;
-	t_mouse 	mouse;
+	t_mouse		mouse;
 	t_data		data;
 
 	if (ac != 2)

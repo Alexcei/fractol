@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   threads.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:55:35 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 01:01:45 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 static int		get_color(t_data *data)
@@ -17,18 +29,19 @@ static int		get_color(t_data *data)
 	return ((red << 16) | (green << 8) | blue);
 }
 
-void		init_size(t_data *data)
+void			init_size(t_data *data)
 {
-	data->max.im = data->min.im + (data->max.re - data->min.re) * HEIGHT / WIDTH;
+	data->max.im = data->min.im + (data->max.re - data->min.re) *
+		HEIGHT / WIDTH;
 	data->factor = init_complex(
 			(data->max.re - data->min.re) / (WIDTH - 1),
 			(data->max.im - data->min.im) / (HEIGHT - 1));
 }
 
-void		check_runaway(t_data *data)
+void			check_runaway(t_data *data)
 {
 	while (pow(data->z.re, 2.0) + pow(data->z.im, 2.0) <= 4
-		   && data->iteration < data->max_iteration)
+			&& data->iteration < data->max_iteration)
 	{
 		if (data->fractal->mandelbrot)
 			mandelbrot(data);
@@ -60,9 +73,11 @@ static void		*creat_image(t_data *data)
 			data->z = init_complex(data->c.re, data->c.im);
 			data->iteration = 0;
 			check_runaway(data);
-			if (data->begin >= HEIGHT || x >= HEIGHT || x < 0 || data->begin < 0)
+			if (data->begin >= HEIGHT || x >= HEIGHT ||
+					x < 0 || data->begin < 0)
 				return (NULL);
-			((int *)(data->data_addr))[(int)(data->begin * WIDTH + x)] = get_color(data);
+			((int *)(data->data_addr))[(int)(data->begin * WIDTH + x)] =
+				get_color(data);
 			x++;
 		}
 	}
@@ -73,7 +88,7 @@ void			fr_creat_image(t_data *data)
 {
 	t_data		data_arr[data->threads];
 	pthread_t	id[data->threads];
-	int i;
+	int			i;
 
 	i = -1;
 	init_size(data);

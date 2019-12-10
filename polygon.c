@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   polygon.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/11 00:52:49 by bpole             #+#    #+#             */
+/*   Updated: 2019/12/11 00:53:40 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 static void		paint_plane(int x, int y, t_data *data, int color_default)
@@ -13,9 +25,9 @@ static void		paint_plane(int x, int y, t_data *data, int color_default)
 
 static void		render_line_plane(t_dot a, t_dot b, t_data *data)
 {
-	double 		x_step;
-	double 		y_step;
-	int 		max;
+	double		x_step;
+	double		y_step;
+	int			max;
 
 	x_step = b.x - a.x;
 	y_step = b.y - a.y;
