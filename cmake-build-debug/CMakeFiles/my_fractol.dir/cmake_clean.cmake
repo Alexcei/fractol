@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_fractol.dir/control.c.o"
   "CMakeFiles/my_fractol.dir/control_mouse.c.o"
+  "CMakeFiles/my_fractol.dir/fdf.c.o"
   "CMakeFiles/my_fractol.dir/fractol.c.o"
   "CMakeFiles/my_fractol.dir/ft_printf/bonus_wildcard.c.o"
   "CMakeFiles/my_fractol.dir/ft_printf/ft_fprintf.c.o"

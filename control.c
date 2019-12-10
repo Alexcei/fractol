@@ -135,17 +135,67 @@ void	threads_up(int key, t_data *data)
 	}
 }
 
+void	fdf_up(t_data *data)
+{
+	if (data->fdf == 0)
+	{
+		data->threads = 1;
+		data->fdf = 1;
+	}
+	else
+	{
+		data->threads = 4;
+		data->fdf = 0;
+	}
+	data->alpha = 0;
+	data->beta = 0;
+}
+
+void	polygon_up(t_data *data)
+{
+	if (data->polygon == 0)
+		data->polygon = 1;
+	else
+		data->polygon = 0;
+}
+
+void	arrow_control(t_data *data, int key)
+{
+	if (key == ARROW_LEFT)
+	{
+		if (data->step == 1)
+			data->step = 1;
+		else
+			data->step--;
+	}
+	else if (key == ARROW_RIGHT)
+	{
+		if (data->step == 100)
+			data->step = 100;
+		else
+			data->step++;
+	}
+	else if (key == ARROW_UP)
+		data->m += 1;
+	else if (key == ARROW_DOWN)
+		data->m -= 1;
+	init_fdf(data);
+}
+
 int				fr_hook_keydown(int key, t_data *data)
 {
-	double	i;
-
-	i = (data->min.re - data->max.re) / 10;
 	if (key == MAIN_PAD_ESC)
 		exit(EXIT_SUCCESS);
 	if (key == MAIN_PAD_P)
 		put_pause(data);
 	if (key == MAIN_PAD_H)
 		help_up(data);
+
+	if (key == MAIN_PAD_F)
+		polygon_up(data);
+
+	if (key == MAIN_PAD_G)
+		fdf_up(data);
 
 	if (key == MAIN_PAD_1)
 		mandelbrot_up(data);
@@ -188,20 +238,9 @@ int				fr_hook_keydown(int key, t_data *data)
 	}
 	if (key == NUM_PAD_PLUS)
 		data->max_iteration  += 1;
-	if (key == ARROW_LEFT)
-	{
-		data->min.re -= i;
-		data->max.re -= i;
-	}
-	else if (key == ARROW_RIGHT)
-	{
-		data->min.re += i;
-		data->max.re += i;
-	}
-	else if (key == ARROW_UP)
-		data->min.im += data->min.im * 0.1;
-	else if (key == ARROW_DOWN)
-		data->min.im -= data->min.im * 0.1;
+	if (key == ARROW_LEFT || key == ARROW_RIGHT ||
+	key == ARROW_UP || key == ARROW_DOWN)
+		arrow_control(data, key);
 	fr_render(data);
 	return (0);
 }

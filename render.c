@@ -89,7 +89,10 @@ static void		render_menu4(t_data *data)
 
 void			fr_render(t_data *data)
 {
-	fr_creat_image(data);
+	if (data->fdf)
+		fdf_create(data);
+	else
+		fr_creat_image(data);
 	mlx_put_image_to_window(data->mlx, data->win, data->img, 0, 0);
 	if (data->help)
 	{

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/my_fractol/control.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/control.c.o"
   "/Users/bpole/CLionProjects/my_fractol/control_mouse.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/control_mouse.c.o"
+  "/Users/bpole/CLionProjects/my_fractol/fdf.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/fdf.c.o"
   "/Users/bpole/CLionProjects/my_fractol/fractol.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/fractol.c.o"
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/bonus_wildcard.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/bonus_wildcard.c.o"
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/ft_fprintf.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/ft_fprintf.c.o"

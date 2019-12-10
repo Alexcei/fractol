@@ -86,6 +86,9 @@
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/control_mouse.c">
 			<Option target="my_fractol"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_fractol/fdf.c">
+			<Option target="my_fractol"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/fractol.c">
 			<Option target="my_fractol"/>
 		</Unit>

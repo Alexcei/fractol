@@ -11,6 +11,11 @@ CMakeFiles/my_fractol.dir/control_mouse.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/control_mouse.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_fractol.dir/control_mouse.c.o: ../ft_printf/libft/libft.h
 
+CMakeFiles/my_fractol.dir/fdf.c.o: ../fdf.c
+CMakeFiles/my_fractol.dir/fdf.c.o: ../fractol.h
+CMakeFiles/my_fractol.dir/fdf.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_fractol.dir/fdf.c.o: ../ft_printf/libft/libft.h
+
 CMakeFiles/my_fractol.dir/fractol.c.o: ../fractol.c
 CMakeFiles/my_fractol.dir/fractol.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/fractol.c.o: ../ft_printf/ft_printf.h

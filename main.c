@@ -32,7 +32,24 @@ static int		fr_init(t_data *data, t_mouse  *mouse, t_fractal *fractal)
 	data->max.re = 2.0;
 	data->min = init_complex(-2, -2);
 	data->k = init_complex(-0.4, 0.6);
+	data->step = 20;
+	data->m = 40;
+	data->x_offset = WIDTH / 2;
+	data->y_offset = HEIGHT / 2;
 	return (1);
+}
+
+void	init_fdf(t_data *data)
+{
+	data->width = WIDTH / data->step - 1;
+	data->height = HEIGHT / data->step - 1;
+	//if (!data->zoom)
+		data->zoom = FT_MIN(WIDTH / data->width, HEIGHT / data->height);
+	data->size = data->width * data->height;
+	if (data->dot)
+		ft_memdel((void*)&data->dot);
+	if (!(data->dot = (t_dot*)ft_memalloc(sizeof(t_dot) * data->size)))
+		print_error("error: initialization");
 }
 
 static void		init_fractol(t_data *data, char *av)
@@ -62,6 +79,7 @@ int				main(int ac, char **av)
 	if (!fr_init(&data, &mouse, &fractal))
 		print_error("error: initialization");
 	init_fractol(&data, av[1]);
+	init_fdf(&data);
 	fr_render(&data);
 	mlx_key_hook(data.win, fr_hook_keydown, &data);
 	mlx_hook(data.win, 17, 0, fdf_close, &data);

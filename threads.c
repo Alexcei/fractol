@@ -62,7 +62,7 @@ static void		*creat_image(t_data *data)
 			check_runaway(data);
 			if (data->begin >= HEIGHT || x >= HEIGHT || x < 0 || data->begin < 0)
 				return (NULL);
-			((int *)(data->data_addr))[data->begin * WIDTH + x] = get_color(data);
+			((int *)(data->data_addr))[(int)(data->begin * WIDTH + x)] = get_color(data);
 			x++;
 		}
 	}

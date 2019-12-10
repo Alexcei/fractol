@@ -19,9 +19,14 @@
 # define WIDTH				650
 # define SIZE 				HEIGHT * WIDTH
 //# define THREADS 4
+# define FDF 		   		0xFFFFFF
+# define BACKGROUND			0x0
 
-# define BACKGROUND			0xFFFFFF
 # define TEXT_COLOR			0xEAEAEA
+
+# define FT_MIN(a, b) (a < b ? a : b)
+# define MAX(a, b) (a > b ? a : b)
+# define MOD(a) (a < 0 ? -a : a)
 
 # define MOUSE_LEFT_BUTTON	1
 # define MOUSE_RIGHT_BUTTON	2
@@ -41,6 +46,7 @@
 # define MAIN_PAD_A			0
 # define MAIN_PAD_S			1
 # define MAIN_PAD_D			2
+# define MAIN_PAD_F			3
 # define MAIN_PAD_H			4
 # define MAIN_PAD_G			5
 # define MAIN_PAD_Q			12
@@ -67,6 +73,14 @@ typedef struct		s_mouse
 	int				previous_x;
 	int				previous_y;
 }					t_mouse;
+
+typedef struct		s_dot
+{
+	double			x;
+	double			y;
+	double			z;
+	int 			color;
+}					t_dot;
 
 typedef struct		s_fractal
 {
@@ -110,6 +124,21 @@ typedef struct		s_data
 	int				endian;
 	int				begin;
 	int				end;
+	double			alpha;
+	double			beta;
+	int				zoom;
+	double			x_offset;
+	double			y_offset;
+	int				fdf;
+	t_dot 			*dot;
+	int 			m;
+	double 			ratio;
+	int 			size;
+	int 			step;
+	int				width;
+	int				height;
+	int 			polygon;
+	int 			color_tmp;
 }					t_data;
 
 /*
@@ -126,6 +155,11 @@ int					fr_mouse_release(int button, int x, int y, void *param);
 int					fr_mouse_move(int x, int y, void *param);
 
 /*
+**					fdf.c
+*/
+void				fdf_create(t_data *data);
+
+/*
 **					fractol.c
 */
 void				mandelbrot(t_data *data);
@@ -135,15 +169,19 @@ void				mandelbar(t_data *data);
 void				celtic_mandelbrot(t_data *data);
 
 /*
-**					loop_key_hook.c
+**					main.c
 */
-int					fr_loop_key_hook(t_data *data);
-void 				fr_creat_image(t_data *data);
+void				init_fdf(t_data *data);
 
 /*
 **					render.c
 */
 void				fr_render(t_data *data);
+
+/*
+**					threads.c
+*/
+void 				fr_creat_image(t_data *data);
 
 /*
 **					utils.c

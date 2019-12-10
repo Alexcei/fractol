@@ -16,7 +16,7 @@ LIB_DIR = ./ft_printf/
 
 LIBFT = $(LIB_DIR)libftprintf.a
 
-SRC = main.c utils.c control.c render.c fractol.c control_mouse.c threads.c
+SRC = main.c utils.c control.c render.c fractol.c control_mouse.c threads.c fdf.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -74,6 +74,12 @@ int				fr_mouse_move(int x, int y, void *param)
 	data->mouse->previous_y = data->mouse->y;
 	data->mouse->x = x;
 	data->mouse->y = y;
+	if (data->mouse->put_left)
+	{
+		data->beta += (x - data->mouse->previous_x) * 0.002;
+		data->alpha -= (y - data->mouse->previous_y) * 0.002;
+		fr_render(data);
+	}
 	if (data->fractal->julia && !data->pause)
 	{
 		data->k = init_complex(

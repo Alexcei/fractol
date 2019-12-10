@@ -177,6 +177,33 @@ control_mouse.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/control_mouse.c.s
 .PHONY : control_mouse.c.s
 
+fdf.o: fdf.c.o
+
+.PHONY : fdf.o
+
+# target to build an object file
+fdf.c.o:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/fdf.c.o
+.PHONY : fdf.c.o
+
+fdf.i: fdf.c.i
+
+.PHONY : fdf.i
+
+# target to preprocess a source file
+fdf.c.i:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/fdf.c.i
+.PHONY : fdf.c.i
+
+fdf.s: fdf.c.s
+
+.PHONY : fdf.s
+
+# target to generate assembly for a file
+fdf.c.s:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/fdf.c.s
+.PHONY : fdf.c.s
+
 fractol.o: fractol.c.o
 
 .PHONY : fractol.o
@@ -2379,6 +2406,9 @@ help:
 	@echo "... control_mouse.o"
 	@echo "... control_mouse.i"
 	@echo "... control_mouse.s"
+	@echo "... fdf.o"
+	@echo "... fdf.i"
+	@echo "... fdf.s"
 	@echo "... fractol.o"
 	@echo "... fractol.i"
 	@echo "... fractol.s"
