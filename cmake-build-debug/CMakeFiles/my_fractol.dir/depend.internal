@@ -6,6 +6,11 @@ CMakeFiles/my_fractol.dir/control.c.o
  /Users/bpole/CLionProjects/my_fractol/fractol.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
+CMakeFiles/my_fractol.dir/control_fractal.c.o
+ /Users/bpole/CLionProjects/my_fractol/control_fractal.c
+ /Users/bpole/CLionProjects/my_fractol/fractol.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
 CMakeFiles/my_fractol.dir/control_mouse.c.o
  /Users/bpole/CLionProjects/my_fractol/control_mouse.c
  /Users/bpole/CLionProjects/my_fractol/fractol.h
@@ -248,21 +253,41 @@ CMakeFiles/my_fractol.dir/ft_printf/parser.c.o
  /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/parser.c
+CMakeFiles/my_fractol.dir/key_control.c.o
+ /Users/bpole/CLionProjects/my_fractol/fractol.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
+ /Users/bpole/CLionProjects/my_fractol/key_control.c
 CMakeFiles/my_fractol.dir/main.c.o
  /Users/bpole/CLionProjects/my_fractol/fractol.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/my_fractol/main.c
+CMakeFiles/my_fractol.dir/polygon.c.o
+ /Users/bpole/CLionProjects/my_fractol/fractol.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
+ /Users/bpole/CLionProjects/my_fractol/polygon.c
 CMakeFiles/my_fractol.dir/render.c.o
  /Users/bpole/CLionProjects/my_fractol/fractol.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/my_fractol/render.c
+CMakeFiles/my_fractol.dir/render_fdf.c.o
+ /Users/bpole/CLionProjects/my_fractol/fractol.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
+ /Users/bpole/CLionProjects/my_fractol/render_fdf.c
 CMakeFiles/my_fractol.dir/threads.c.o
  /Users/bpole/CLionProjects/my_fractol/fractol.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/my_fractol/threads.c
+CMakeFiles/my_fractol.dir/transform.c.o
+ /Users/bpole/CLionProjects/my_fractol/fractol.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/libft.h
+ /Users/bpole/CLionProjects/my_fractol/transform.c
 CMakeFiles/my_fractol.dir/utils.c.o
  /Users/bpole/CLionProjects/my_fractol/fractol.h
  /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h

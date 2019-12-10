@@ -6,6 +6,11 @@ CMakeFiles/my_fractol.dir/control.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/control.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_fractol.dir/control.c.o: ../ft_printf/libft/libft.h
 
+CMakeFiles/my_fractol.dir/control_fractal.c.o: ../control_fractal.c
+CMakeFiles/my_fractol.dir/control_fractal.c.o: ../fractol.h
+CMakeFiles/my_fractol.dir/control_fractal.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_fractol.dir/control_fractal.c.o: ../ft_printf/libft/libft.h
+
 CMakeFiles/my_fractol.dir/control_mouse.c.o: ../control_mouse.c
 CMakeFiles/my_fractol.dir/control_mouse.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/control_mouse.c.o: ../ft_printf/ft_printf.h
@@ -248,20 +253,40 @@ CMakeFiles/my_fractol.dir/ft_printf/parser.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_fractol.dir/ft_printf/parser.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_fractol.dir/ft_printf/parser.c.o: ../ft_printf/parser.c
 
+CMakeFiles/my_fractol.dir/key_control.c.o: ../fractol.h
+CMakeFiles/my_fractol.dir/key_control.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_fractol.dir/key_control.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/my_fractol.dir/key_control.c.o: ../key_control.c
+
 CMakeFiles/my_fractol.dir/main.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/main.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_fractol.dir/main.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_fractol.dir/main.c.o: ../main.c
+
+CMakeFiles/my_fractol.dir/polygon.c.o: ../fractol.h
+CMakeFiles/my_fractol.dir/polygon.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_fractol.dir/polygon.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/my_fractol.dir/polygon.c.o: ../polygon.c
 
 CMakeFiles/my_fractol.dir/render.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/render.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_fractol.dir/render.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_fractol.dir/render.c.o: ../render.c
 
+CMakeFiles/my_fractol.dir/render_fdf.c.o: ../fractol.h
+CMakeFiles/my_fractol.dir/render_fdf.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_fractol.dir/render_fdf.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/my_fractol.dir/render_fdf.c.o: ../render_fdf.c
+
 CMakeFiles/my_fractol.dir/threads.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/threads.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_fractol.dir/threads.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_fractol.dir/threads.c.o: ../threads.c
+
+CMakeFiles/my_fractol.dir/transform.c.o: ../fractol.h
+CMakeFiles/my_fractol.dir/transform.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_fractol.dir/transform.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/my_fractol.dir/transform.c.o: ../transform.c
 
 CMakeFiles/my_fractol.dir/utils.c.o: ../fractol.h
 CMakeFiles/my_fractol.dir/utils.c.o: ../ft_printf/ft_printf.h

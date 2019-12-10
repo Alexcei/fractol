@@ -6,7 +6,7 @@
 #    By: bpole <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/11 10:08:31 by bpole             #+#    #+#              #
-#    Updated: 2019/12/10 00:59:36 by bpole            ###   ########.fr        #
+#    Updated: 2019/12/10 21:35:36 by bpole            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ LIB_DIR = ./ft_printf/
 
 LIBFT = $(LIB_DIR)libftprintf.a
 
-SRC = main.c utils.c control.c render.c fractol.c control_mouse.c threads.c fdf.c
+SRC = main.c utils.c control.c render.c fractol.c control_mouse.c threads.c \
+    fdf.c control_fractal.c key_control.c transform.c render_fdf.c polygon.c
 
 OBJ = $(SRC:.c=.o)
 

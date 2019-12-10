@@ -7,21 +7,14 @@
 # include <math.h>
 
 # define CYN	"\x1B[36m"
-# define RED	"\x1B[31m"
-# define GRN	"\x1B[32m"
-# define YEL	"\x1B[33m"
-# define BLU	"\x1B[34m"
-# define MAG	"\x1B[35m"
-# define WHT	"\x1B[37m"
 # define RESET	"\x1B[0m"
 
 # define HEIGHT				650
 # define WIDTH				650
 # define SIZE 				HEIGHT * WIDTH
-//# define THREADS 4
+
 # define FDF 		   		0xFFFFFF
 # define BACKGROUND			0x0
-
 # define TEXT_COLOR			0xEAEAEA
 
 # define FT_MIN(a, b) (a < b ? a : b)
@@ -41,6 +34,7 @@
 
 # define NUM_PAD_PLUS		69
 # define NUM_PAD_MINUS		78
+# define NUM_PAD_STAR		67
 
 # define MAIN_PAD_ESC		53
 # define MAIN_PAD_A			0
@@ -49,6 +43,7 @@
 # define MAIN_PAD_F			3
 # define MAIN_PAD_H			4
 # define MAIN_PAD_G			5
+# define MAIN_PAD_C			8
 # define MAIN_PAD_Q			12
 # define MAIN_PAD_W			13
 # define MAIN_PAD_E			14
@@ -59,7 +54,6 @@
 # define MAIN_PAD_3			20
 # define MAIN_PAD_4			21
 # define MAIN_PAD_5			23
-# define MAIN_PAD_6			22
 
 # define MAIN_PAD_PLUS		24
 # define MAIN_PAD_MINUS		27
@@ -139,6 +133,7 @@ typedef struct		s_data
 	int				height;
 	int 			polygon;
 	int 			color_tmp;
+	int 			coord;
 }					t_data;
 
 /*
@@ -147,9 +142,17 @@ typedef struct		s_data
 int					fr_hook_keydown(int key, t_data *data);
 
 /*
+**					control_fractal.c
+*/
+void				mandelbrot_up(t_data *data);
+void				julia_up(t_data *data);
+void				burning_ship_up(t_data *data);
+void				mandelbar_up(t_data *data);
+void				celtic_mandelbrot_up(t_data *data);
+
+/*
 **					control_mouse.c
 */
-void				fr_view_up(t_data *data);
 int					fr_mouse_press(int button, int x, int y, void *param);
 int					fr_mouse_release(int button, int x, int y, void *param);
 int					fr_mouse_move(int x, int y, void *param);
@@ -169,9 +172,19 @@ void				mandelbar(t_data *data);
 void				celtic_mandelbrot(t_data *data);
 
 /*
+**					key_control.c
+*/
+void				fr_key_control(int key, t_data *data);
+
+/*
 **					main.c
 */
 void				init_fdf(t_data *data);
+
+/*
+**					poligon.c
+*/
+void				render_plane(t_dot a, t_dot b, t_dot c, t_data *data);
 
 /*
 **					render.c
@@ -179,14 +192,28 @@ void				init_fdf(t_data *data);
 void				fr_render(t_data *data);
 
 /*
+**					render_fdf.c
+*/
+void				render_map(t_data *data);
+
+/*
 **					threads.c
 */
 void 				fr_creat_image(t_data *data);
+void				check_runaway(t_data *data);
+void				init_size(t_data *data);
+
+/*
+**					transforma.c
+*/
+t_dot				transformations(t_dot dot, t_data *data);
 
 /*
 **					utils.c
 */
 void				print_error(char *message);
 t_complex			init_complex(double re, double im);
+void				fr_view_up(t_data *data);
+void				render_menu5(t_data *data);
 
 #endif

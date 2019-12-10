@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/bpole/CLionProjects/my_fractol/control_mouse.c
+fractol.h
+/Users/bpole/CLionProjects/my_fractol/fractol.h
+
 /Users/bpole/CLionProjects/my_fractol/fractol.h
 ft_printf/ft_printf.h
 /Users/bpole/CLionProjects/my_fractol/ft_printf/ft_printf.h
@@ -32,7 +36,7 @@ unistd.h
 fcntl.h
 /Users/bpole/CLionProjects/my_fractol/ft_printf/libft/fcntl.h
 
-/Users/bpole/CLionProjects/my_fractol/main.c
+/Users/bpole/CLionProjects/my_fractol/render_fdf.c
 fractol.h
 /Users/bpole/CLionProjects/my_fractol/fractol.h
 

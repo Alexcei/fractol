@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/my_fractol/control.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/control.c.o"
+  "/Users/bpole/CLionProjects/my_fractol/control_fractal.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/control_fractal.c.o"
   "/Users/bpole/CLionProjects/my_fractol/control_mouse.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/control_mouse.c.o"
   "/Users/bpole/CLionProjects/my_fractol/fdf.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/fdf.c.o"
   "/Users/bpole/CLionProjects/my_fractol/fractol.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/fractol.c.o"
@@ -84,9 +85,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/output_u.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/output_u.c.o"
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/output_x.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/output_x.c.o"
   "/Users/bpole/CLionProjects/my_fractol/ft_printf/parser.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/ft_printf/parser.c.o"
+  "/Users/bpole/CLionProjects/my_fractol/key_control.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/key_control.c.o"
   "/Users/bpole/CLionProjects/my_fractol/main.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/main.c.o"
+  "/Users/bpole/CLionProjects/my_fractol/polygon.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/polygon.c.o"
   "/Users/bpole/CLionProjects/my_fractol/render.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/render.c.o"
+  "/Users/bpole/CLionProjects/my_fractol/render_fdf.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/render_fdf.c.o"
   "/Users/bpole/CLionProjects/my_fractol/threads.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/threads.c.o"
+  "/Users/bpole/CLionProjects/my_fractol/transform.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/transform.c.o"
   "/Users/bpole/CLionProjects/my_fractol/utils.c" "/Users/bpole/CLionProjects/my_fractol/cmake-build-debug/CMakeFiles/my_fractol.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

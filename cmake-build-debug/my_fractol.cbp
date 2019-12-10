@@ -83,6 +83,9 @@
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/control.c">
 			<Option target="my_fractol"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_fractol/control_fractal.c">
+			<Option target="my_fractol"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/control_mouse.c">
 			<Option target="my_fractol"/>
 		</Unit>
@@ -329,16 +332,28 @@
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/ft_printf/parser.c">
 			<Option target="my_fractol"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_fractol/key_control.c">
+			<Option target="my_fractol"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/main.c">
 			<Option target="my_fractol"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/minilibx_macos/libmlx.a">
 			<Option target="my_fractol"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_fractol/polygon.c">
+			<Option target="my_fractol"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/render.c">
 			<Option target="my_fractol"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_fractol/render_fdf.c">
+			<Option target="my_fractol"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/threads.c">
+			<Option target="my_fractol"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_fractol/transform.c">
 			<Option target="my_fractol"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_fractol/utils.c">

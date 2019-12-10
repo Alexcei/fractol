@@ -150,6 +150,33 @@ control.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/control.c.s
 .PHONY : control.c.s
 
+control_fractal.o: control_fractal.c.o
+
+.PHONY : control_fractal.o
+
+# target to build an object file
+control_fractal.c.o:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/control_fractal.c.o
+.PHONY : control_fractal.c.o
+
+control_fractal.i: control_fractal.c.i
+
+.PHONY : control_fractal.i
+
+# target to preprocess a source file
+control_fractal.c.i:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/control_fractal.c.i
+.PHONY : control_fractal.c.i
+
+control_fractal.s: control_fractal.c.s
+
+.PHONY : control_fractal.s
+
+# target to generate assembly for a file
+control_fractal.c.s:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/control_fractal.c.s
+.PHONY : control_fractal.c.s
+
 control_mouse.o: control_mouse.c.o
 
 .PHONY : control_mouse.o
@@ -2283,6 +2310,33 @@ ft_printf/parser.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/ft_printf/parser.c.s
 .PHONY : ft_printf/parser.c.s
 
+key_control.o: key_control.c.o
+
+.PHONY : key_control.o
+
+# target to build an object file
+key_control.c.o:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/key_control.c.o
+.PHONY : key_control.c.o
+
+key_control.i: key_control.c.i
+
+.PHONY : key_control.i
+
+# target to preprocess a source file
+key_control.c.i:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/key_control.c.i
+.PHONY : key_control.c.i
+
+key_control.s: key_control.c.s
+
+.PHONY : key_control.s
+
+# target to generate assembly for a file
+key_control.c.s:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/key_control.c.s
+.PHONY : key_control.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2309,6 +2363,33 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/main.c.s
 .PHONY : main.c.s
+
+polygon.o: polygon.c.o
+
+.PHONY : polygon.o
+
+# target to build an object file
+polygon.c.o:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/polygon.c.o
+.PHONY : polygon.c.o
+
+polygon.i: polygon.c.i
+
+.PHONY : polygon.i
+
+# target to preprocess a source file
+polygon.c.i:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/polygon.c.i
+.PHONY : polygon.c.i
+
+polygon.s: polygon.c.s
+
+.PHONY : polygon.s
+
+# target to generate assembly for a file
+polygon.c.s:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/polygon.c.s
+.PHONY : polygon.c.s
 
 render.o: render.c.o
 
@@ -2337,6 +2418,33 @@ render.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/render.c.s
 .PHONY : render.c.s
 
+render_fdf.o: render_fdf.c.o
+
+.PHONY : render_fdf.o
+
+# target to build an object file
+render_fdf.c.o:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/render_fdf.c.o
+.PHONY : render_fdf.c.o
+
+render_fdf.i: render_fdf.c.i
+
+.PHONY : render_fdf.i
+
+# target to preprocess a source file
+render_fdf.c.i:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/render_fdf.c.i
+.PHONY : render_fdf.c.i
+
+render_fdf.s: render_fdf.c.s
+
+.PHONY : render_fdf.s
+
+# target to generate assembly for a file
+render_fdf.c.s:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/render_fdf.c.s
+.PHONY : render_fdf.c.s
+
 threads.o: threads.c.o
 
 .PHONY : threads.o
@@ -2363,6 +2471,33 @@ threads.s: threads.c.s
 threads.c.s:
 	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/threads.c.s
 .PHONY : threads.c.s
+
+transform.o: transform.c.o
+
+.PHONY : transform.o
+
+# target to build an object file
+transform.c.o:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/transform.c.o
+.PHONY : transform.c.o
+
+transform.i: transform.c.i
+
+.PHONY : transform.i
+
+# target to preprocess a source file
+transform.c.i:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/transform.c.i
+.PHONY : transform.c.i
+
+transform.s: transform.c.s
+
+.PHONY : transform.s
+
+# target to generate assembly for a file
+transform.c.s:
+	$(MAKE) -f CMakeFiles/my_fractol.dir/build.make CMakeFiles/my_fractol.dir/transform.c.s
+.PHONY : transform.c.s
 
 utils.o: utils.c.o
 
@@ -2403,6 +2538,9 @@ help:
 	@echo "... control.o"
 	@echo "... control.i"
 	@echo "... control.s"
+	@echo "... control_fractal.o"
+	@echo "... control_fractal.i"
+	@echo "... control_fractal.s"
 	@echo "... control_mouse.o"
 	@echo "... control_mouse.i"
 	@echo "... control_mouse.s"
@@ -2640,15 +2778,27 @@ help:
 	@echo "... ft_printf/parser.o"
 	@echo "... ft_printf/parser.i"
 	@echo "... ft_printf/parser.s"
+	@echo "... key_control.o"
+	@echo "... key_control.i"
+	@echo "... key_control.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... polygon.o"
+	@echo "... polygon.i"
+	@echo "... polygon.s"
 	@echo "... render.o"
 	@echo "... render.i"
 	@echo "... render.s"
+	@echo "... render_fdf.o"
+	@echo "... render_fdf.i"
+	@echo "... render_fdf.s"
 	@echo "... threads.o"
 	@echo "... threads.i"
 	@echo "... threads.s"
+	@echo "... transform.o"
+	@echo "... transform.i"
+	@echo "... transform.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"

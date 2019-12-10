@@ -69,10 +69,12 @@ static void		render_menu4(t_data *data)
 
 	iterations = ft_itoa(data->max_iteration);
 	threads = ft_itoa(data->threads);
-	mlx_string_put(data->mlx, data->win, 380, 530,
+	mlx_string_put(data->mlx, data->win, 380, 510,
 				   TEXT_COLOR, "System");
-	mlx_string_put(data->mlx, data->win, 340, 550,
+	mlx_string_put(data->mlx, data->win, 340, 530,
 				   TEXT_COLOR, "Change iterations +/- num pad");
+	mlx_string_put(data->mlx, data->win, 340, 550,
+				   TEXT_COLOR, "Change iterations X10 Press *");
 	mlx_string_put(data->mlx, data->win, 340, 570,
 				   TEXT_COLOR, "Current iterations - ");
 	mlx_string_put(data->mlx, data->win, 550, 570,
@@ -100,6 +102,7 @@ void			fr_render(t_data *data)
 		render_menu2(data);
 		render_menu3(data);
 		render_menu4(data);
+		render_menu5(data);
 	}
 	else
 		mlx_string_put(data->mlx, data->win, 45, 40,

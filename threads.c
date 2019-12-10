@@ -17,7 +17,7 @@ static int		get_color(t_data *data)
 	return ((red << 16) | (green << 8) | blue);
 }
 
-static void		init_size(t_data *data)
+void		init_size(t_data *data)
 {
 	data->max.im = data->min.im + (data->max.re - data->min.re) * HEIGHT / WIDTH;
 	data->factor = init_complex(
@@ -25,7 +25,7 @@ static void		init_size(t_data *data)
 			(data->max.im - data->min.im) / (HEIGHT - 1));
 }
 
-static void		check_runaway(t_data *data)
+void		check_runaway(t_data *data)
 {
 	while (pow(data->z.re, 2.0) + pow(data->z.im, 2.0) <= 4
 		   && data->iteration < data->max_iteration)
